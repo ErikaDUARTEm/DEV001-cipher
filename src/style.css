@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    margin: 20px;
+    margin: auto;
     display: flex;
     align-content: center;
     background-image: url(/img/msnsecurity.jpg);
@@ -15,18 +15,18 @@ body {
     height: 60px;
     
 }
+main {
+    text-align: center;
+}
 form {
     justify-content: center;
     box-shadow: 6px 6px 6px 6px white;
-    border: 1px outset;
-  
-
-  
-    
+    outline-style: outset;
 }
 header {
-    text-align: center;
+    margin: 2px 2px 2px 2px;
 }
+
 #entrada {
     resize: none;
     border-style: 1 px solid white;
@@ -38,4 +38,18 @@ h1 {
     text-shadow: 2px 3px dodgerblue;
     margin-top: 2px;
     font-size: 30px;
+}
+#offset {
+    border: 1px solid ;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#btn-cifrar {
+    text-align: center;
+}
+#btn-descifrar {
+    text-align: center;
 }

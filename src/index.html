@@ -13,15 +13,19 @@
            <p> Bienvenid@ <span class="Usuario"></span></p>
            <p>Por Favor elige lo que deseas hacer con tu mensaje:</p>
             <label id="btn-cifrar">
-              <button type="button" name="cifrar" value="cifrar"><em>Cifrar</em></button>
+              <button type="button" name="cifrar" value="cifrar" class="cifrar">Cifrar</button>
             </label>  
             <label id="btn-descifrar">
-            <button type="button" name="descifrar" value="descifrar"><em>Descifrar</em></button>
+            <button type="button" name="descifrar" value="descifrar" class="descifrar">Descifrar</button>
             </label>
         </header>
          <section>
           <label>
             <textarea id="entrada" rows="10" cols="50"></textarea>
+          </label>
+          <label class="desplazamiento">
+            <p>Elige el número de OffSet</p>
+            <input type="number" name="offset" id="offset" value="offset">
           </label>
          </section>
        </form>

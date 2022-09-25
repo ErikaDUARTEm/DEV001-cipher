@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -10,13 +11,14 @@
       <form>
       <header>
             <h1>NATIONAL SECURITY</h1>
+            <br>
            <p> Bienvenid@ <span class="Usuario"></span></p>
-           <p>Por Favor elige lo que deseas hacer con tu mensaje:</p>
-            <label id="btn-cifrar">
-              <button type="button" name="cifrar" value="cifrar" class="cifrar">Cifrar</button>
+           <p>Por Favor elige lo que deseas hacer con tu mensaje:</p><br>
+            <label>
+              <button type="submit" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
             </label>  
-            <label id="btn-descifrar">
-            <button type="button" name="descifrar" value="descifrar" class="descifrar">Descifrar</button>
+            <label>
+            <button type="submit" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
             </label>
         </header>
          <section>
@@ -25,7 +27,7 @@
           </label>
           <label class="desplazamiento">
             <p>Elige el número de OffSet</p>
-            <input type="number" name="offset" id="offset" value="offset">
+            <input type="number" name="offset" id="offset" min="1" max="26">
           </label>
          </section>
        </form>

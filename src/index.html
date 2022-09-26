@@ -7,30 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <main>
+    <main>
+      <section class="principal">
+        <h1>NATIONAL SECURITY</h1>
+        <p> Bienvenid@ <span class="Usuario"></span></p>
+        <p>Por Favor elige lo que deseas hacer con tu mensaje:</p>
       <form>
-      <header>
-            <h1>NATIONAL SECURITY</h1>
-            <br>
-           <p> Bienvenid@ <span class="Usuario"></span></p>
-           <p>Por Favor elige lo que deseas hacer con tu mensaje:</p><br>
-            <label>
-              <button type="submit" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
-            </label>  
-            <label>
-            <button type="submit" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
-            </label>
-        </header>
-         <section>
-          <label>
-            <textarea id="entrada" rows="10" cols="50"></textarea>
-          </label>
-          <label class="desplazamiento">
-            <p>Elige el número de OffSet</p>
-            <input type="number" name="offset" id="offset" min="1" max="26">
-          </label>
-         </section>
-       </form>
+         <label>
+           <button type="submit" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
+         </label>  
+         <label>
+           <button type="submit" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
+         </label>
+         <label>
+           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
+         </label>
+         <label class="desplazamiento">
+           <p>Elige el número de OffSet</p>
+           <input type="number" name="offset" id="offset" min="1" max="26">
+         </label>
+        </form>
+      </section>
      </main>
     <script src="index.js" type="module"></script>
   </body>

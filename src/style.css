@@ -8,10 +8,9 @@
 }
 
 body {
-
     background-image: url(/img/mensajes-cifrados.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color:rgb(241, 235, 235);
 }
 main {
@@ -19,12 +18,12 @@ main {
 }
 
 .principal{
-    display: none;
     outline-style: outset;
     text-align: center;
     width: 60%;
     height: 50%;
     box-shadow: 15px 15px 15px #eeedf2;
+    background-color:rgba(0,0,0,.5);
 }
 p {
     font-family: 'Acme', sans-serif;
@@ -55,7 +54,7 @@ h1 {
     margin: 20px 20px 10px 20px;
     padding: 20px 20px 20px 20px;
     box-sizing: border-box;
-    
+
 }
 #offset {
     border: 1px solid ;
@@ -80,7 +79,7 @@ h1 {
     font-family: 'Acme', sans-serif;
     box-sizing: border-box;
     border-color: rgb(11, 148, 152);
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 15px;
     box-shadow: 5px 9px 15px white;
     
@@ -108,35 +107,34 @@ h1 {
 }
 
 .iniciar {
-   
+    display:none;
     width: 60%;
     height: 80%;
     outline-style: outset;
     box-shadow: 15px 15px 15px #f4f3f8;
+    background-color:rgba(0,0,0,.5)
 }
 
 #text {
     margin: 10px 10px 10px 60px;
     font-family: 'Roboto Slab', serif;
-    box-shadow: 10px 10px 20px 20px #eeedf2;
-    background-color: #eeedf2;
-    color: black;
+    color:  white;
 }
 
 #campo-text {
     margin: 10px 5px 5px 31px;
-    box-shadow: 10px 10px 20px 20px #eeedf2;
     border-radius: 5px;
     text-align: center;
     color:grey;
+    height: 20px;
    
 }
 #campo-text2{
     margin: 10px 5px 20px 4px;
-    box-shadow: 10px 10px 20px 20px #eeedf2;
     border-radius: 5px;
     text-align: center;
     color:grey;
+    height: 20px;
 }
 .btn-iniciar, .btn-borrar {
     margin: 20px 5px 60px 50px;
@@ -148,7 +146,7 @@ h1 {
     box-sizing: border-box;
     cursor:pointer;
     border-radius: 15px;
-    box-shadow: 10px 20px 20px white;
+    box-shadow: 5px 10px 15px white;
     border: 1px rgb(133, 130, 130);
     cursor: pointer;
 }

@@ -12,7 +12,7 @@
           <form class="inicio-sesion">
             <h1>NATIONAL SECURITY</h1>
             <label id="text">Usuario:</label>
-            <input type="text" id="campo-text" placeholder="Nombre de usuario"><br>
+            <input type="text" id="campo-text" class="nombre-usuario" placeholder="Nombre de usuario"><br>
             <label id="text">Contraseña:</label>
             <input type="password" id="campo-text2" placeholder="Ingresa tu contraseña"><br>
             <label>
@@ -23,23 +23,24 @@
             </label>
           </form>
       </section>
-      <section class="principal">
-        <h1>NATIONAL SECURITY</h1>
-        <p> Bienvenid@ <span class="Usuario"></span></p>
-        <p>Por Favor elige lo que deseas hacer con tu mensaje:</p>
-      <form>
+      <section class="ocultar principal">
+          <h1>NATIONAL SECURITY</h1>
+          <p> Bienvenid@ <span class="Usuario"></span></p>
+          <p>1. Por favor elige el número de desplazamiento:</p>
+      <form id="cifrar">
+        <label class="desplazamiento">
+          <input type="number" name="offset" id="offset" min="1" max="26" placeholder="1">
+        </label>
+         <p>2. Escribe tu mensaje:</p>
+         <label>
+           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
+         </label>
+         <p>3. Elige lo que deseas hacer con tu mensaje:</p> 
          <label>
            <button type="submit" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
          </label>  
          <label>
            <button type="submit" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
-         </label>
-         <label>
-           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
-         </label>
-         <label class="desplazamiento">
-           <p>Elige el número de OffSet</p>
-           <input type="number" name="offset" id="offset" min="1" max="26">
          </label>
         </form>
       </section>

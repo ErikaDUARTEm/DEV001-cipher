@@ -12,13 +12,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color:rgb(241, 235, 235);
+
 }
 main {
     margin: 80px 20px 50px 300px;
 }
 
 .principal{
-    
     outline-style: outset;
     text-align: center;
     width: 60%;
@@ -108,7 +108,6 @@ h1 {
 }
 
 .iniciar {
-    display: none;
     width: 60%;
     height: 80%;
     outline-style: outset;
@@ -122,18 +121,16 @@ h1 {
     color:  white;
 }
 
-#campo-text {
+#usuario {
     margin: 10px 5px 5px 31px;
     border-radius: 5px;
-    text-align: center;
     color:grey;
     height: 20px;
    
 }
-#campo-text2{
+#password{
     margin: 10px 5px 20px 4px;
     border-radius: 5px;
-    text-align: center;
     color:grey;
     height: 20px;
 }
@@ -169,3 +166,9 @@ h1 {
     box-shadow: 0 5px #666;
     transform: translate 0.04;
   }
+.ocultar {
+    display: none;
+  }
+.mostrar {
+    display: block;
+}

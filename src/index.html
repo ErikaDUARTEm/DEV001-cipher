@@ -8,24 +8,24 @@
   </head>
   <body>
     <main>
-      <section class="iniciar">
-          <form class="inicio-sesion">
+      <section class= "mostrar iniciar">
+          <form>
             <h1>NATIONAL SECURITY</h1>
             <label id="text">Usuario:</label>
-            <input type="text" id="campo-text" class="nombre-usuario" placeholder="Nombre de usuario"><br>
+            <input type="text" id="usuario" class="nombre-usuario" name="usuario" placeholder="Nombre de usuario"><br>
             <label id="text">Contraseña:</label>
-            <input type="password" id="campo-text2" placeholder="Ingresa tu contraseña"><br>
+            <input type="password" id="password" placeholder="Ingresa tu contraseña"><br>
             <label>
-               <button type="button" name="iniciar" value="iniciar" class="btn-iniciar">Iniciar Sesión</button>
+               <button type="button" value="iniciar" class="btn-iniciar">Iniciar Sesión</button>
             </label>
             <label>
-               <button type="button"name="borrar" class="btn-borrar">Borrar campo</button>
+               <button type="button" name="borrar" class="btn-borrar">Borrar campo</button>
             </label>
           </form>
       </section>
       <section class="ocultar principal">
           <h1>NATIONAL SECURITY</h1>
-          <p> Bienvenid@ <span class="Usuario"></span></p>
+          <p> Bienvenid@ <span class="usuario"></span></p>
           <p>1. Por favor elige el número de desplazamiento:</p>
       <form id="cifrar">
         <label class="desplazamiento">
@@ -33,7 +33,7 @@
         </label>
          <p>2. Escribe tu mensaje:</p>
          <label>
-           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
+           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí el mensaje..."></textarea>
          </label>
          <p>3. Elige lo que deseas hacer con tu mensaje:</p> 
          <label>

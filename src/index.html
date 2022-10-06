@@ -12,9 +12,9 @@
           <form>
             <h1>NATIONAL SECURITY</h1>
             <label id="text">Usuario:</label>
-            <input type="text" id="usuario" class="nombre-usuario" name="usuario" placeholder="Nombre de usuario"><br>
+              <input type="text" id="usuario" class="nombre-usuario" name="usuario" placeholder="Nombre de usuario"><br>
             <label id="text">Contraseña:</label>
-            <input type="password" id="password" placeholder="Ingresa tu contraseña"><br>
+              <input type="password" id="password" placeholder="Ingresa tu contraseña"><br>
             <label>
                <button type="button" value="iniciar" class="btn-iniciar">Iniciar Sesión</button>
             </label>
@@ -29,18 +29,21 @@
           <p>1. Por favor elige el número de desplazamiento:</p>
       <form id="cifrar">
         <label class="desplazamiento">
-          <input type="number" name="offset" id="offset" min="1" max="26" placeholder="1">
+        <input type="number" id="offset" class="offset"  name="offset" min="0" max="" placeholder="0" autofocus>
         </label>
          <p>2. Escribe tu mensaje:</p>
          <label>
-           <textarea id="entrada" rows="8" cols="40" placeholder="Escribe aquí el mensaje..."></textarea>
-         </label>
+           <textarea id="entrada" class="ver" rows="5" cols="40"  name="mensajeIngresado" placeholder="Escribe aquí el mensaje..."></textarea>
+          </label>
+          <label>
+            <textarea id="resultado" class="nover resultado" rows="5" cols="40" name="mensajeCifrado"></textarea>
+          </label>
          <p>3. Elige lo que deseas hacer con tu mensaje:</p> 
          <label>
-           <button type="submit" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
+           <button type="button" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
          </label>  
          <label>
-           <button type="submit" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
+           <button type="button" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
          </label>
         </form>
       </section>

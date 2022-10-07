@@ -17,9 +17,22 @@ const cipher = {
           return textoCifrado; 
   },
 
-   decode(numeroD, textOriginal){
-
-  },
-};
+   decode(desplazamiento, textCifrado){
+     let cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     let textDescifrado ="";
+     let ASCII= "";
+     for (let i= 0; i < textCifrado.length; i++) {
+          if(cadena.indexOf(textCifrado[i]) != -1) {
+            ASCII = ((textCifrado[i].charCodeAt() - 65 - desplazamiento) %26);
+          textDescifrado += cadena[ASCII];
+          
+        } else {
+           resultado += textCifrado[i];         
+          }
+        }  
+        return textDescifrado;
+     }   
+  }
+  
 
 export default cipher;

@@ -40,7 +40,7 @@ S(".btn-iniciar").addEventListener("click", validarUsuario);
 
 
    S(".btn-cifrar").addEventListener("click", () => {
-   let numeroD= S(".offset").valueAsNumber;
+   let numeroD = S(".offset").valueAsNumber;
    let textOriginal =  S("#entrada").value.toUpperCase();
    let resultado = cipher.encode(numeroD,textOriginal); 
    console.log(resultado);
@@ -51,4 +51,14 @@ S(".btn-iniciar").addEventListener("click", validarUsuario);
    S(".resultado").innerHTML = resultado;
   });
   
-  
+  S(".btn-descifrar").addEventListener("click", () => {
+    let desplazamiento = S(".offset").valueAsNumber;
+    let textCifrado = S(".resultado").value.toUpperCase();
+    let resulDescifrado = cipher.decode(desplazamiento, textCifrado);
+    console.log(resulDescifrado);
+    document.getElementById("entrada").classList.remove("nover");
+    document.getElementById("entrada").classList.add("ver");
+    document.getElementById("resultado").classList.remove("ver");
+    document.getElementById("resultado").classList.add("nover");
+    S(".resultado").innerHTML = resultado;
+  });

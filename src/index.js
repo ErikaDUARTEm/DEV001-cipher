@@ -4,13 +4,13 @@ const S= (selector) => document.querySelector(selector);
 
 // usuario registrado
 let usuarios = {
-  name:"Erika Duarte",
-  password:"123456"
+    name: "Luis Perez",
+    password:"123456"
  }  
  
  //borrar usuario y contraseña
 const borrar = () => {
-  S(".btn-borrar").addEventListener("click", (e) =>{
+  S(".btn-borrar").addEventListener("click", () =>{
     location.reload();
   })
 }
@@ -22,7 +22,7 @@ const validarUsuario = () =>{
   let password = document.getElementById("password");
     if (usuario.value === "") return alert("Debes ingresar tu nombre de usuario");  
     if (password.value === "") return alert("Debes ingresar tu contraseña");
-    if (usuarios.name === "Erika Duarte" && usuarios.password === "123456") {
+    if (usuarios.name === "Luis Perez" && usuarios.password === "123456") {
           S(".iniciar").classList.add("ocultar");
           S(".iniciar").classList.remove("mostrar");
           S(".principal").classList.add("mostrar");
@@ -41,9 +41,8 @@ S(".btn-iniciar").addEventListener("click", validarUsuario);
 
    S(".btn-cifrar").addEventListener("click", () => {
    let numeroD = S(".offset").valueAsNumber;
-   let textOriginal =  S("#entrada").value.toUpperCase();
+   let textOriginal = S("#entrada").value.toUpperCase();
    let resultado = cipher.encode(numeroD,textOriginal); 
-   console.log(resultado);
    document.getElementById("entrada").classList.remove("ver");
    document.getElementById("entrada").classList.add("nover");
    document.getElementById("resultado").classList.remove("nover");
@@ -52,13 +51,12 @@ S(".btn-iniciar").addEventListener("click", validarUsuario);
   });
   
   S(".btn-descifrar").addEventListener("click", () => {
-    let desplazamiento = S(".offset").valueAsNumber;
+    let numeroD = S(".offset").valueAsNumber;
     let textCifrado = S(".resultado").value.toUpperCase();
-    let resulDescifrado = cipher.decode(desplazamiento, textCifrado);
-    console.log(resulDescifrado);
+    let resulDescifrado = cipher.decode(numeroD, textCifrado);
     document.getElementById("entrada").classList.remove("nover");
     document.getElementById("entrada").classList.add("ver");
     document.getElementById("resultado").classList.remove("ver");
     document.getElementById("resultado").classList.add("nover");
-    S(".resultado").innerHTML = resultado;
+    S(".resultado").innerHTML = resulDescifrado;
   });

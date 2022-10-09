@@ -4,7 +4,7 @@ const S= (selector) => document.querySelector(selector);
 
 // usuario registrado
 let usuarios = {
-    name: "Luis Perez",
+    name: "Admin",
     password:"123456"
  }  
  
@@ -22,7 +22,7 @@ const validarUsuario = () =>{
   let password = document.getElementById("password");
     if (usuario.value === "") return alert("Debes ingresar tu nombre de usuario");  
     if (password.value === "") return alert("Debes ingresar tu contraseña");
-    if (usuarios.name === "Luis Perez" && usuarios.password === "123456") {
+    if (usuarios.name === "Admin" && usuarios.password === "123456") {
           S(".iniciar").classList.add("ocultar");
           S(".iniciar").classList.remove("mostrar");
           S(".principal").classList.add("mostrar");

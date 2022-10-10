@@ -1,5 +1,8 @@
 ![image text](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-cipher/main/img/national%20security.jpg)
+<<<<<<< HEAD
 # Cifrado César
+=======
+>>>>>>> 6f21e95008850a0e7094a61f86fac5f475653ea1
 ## 1. Preámbulo
 National Security es un software de Encriptación dirigido a empresas o instituciones, donde se requiera mantener una estrategia de seguridad para prevención de actos delictivos; Gracias a National Security los integrantes de estas empresas o instituciones podrán comunicar sus objetivos, rutas de vigilancia, horarios de cambio de guardia, y todo lo relacionado con mantener la seguridad y la protección de los trabajadores y de sus instalaciones; Y de esta manera los integrantes del grupo de seguridad ingresan con usuario y contraseña para cifrar o descifrar lo antes pactado.
 
@@ -53,3 +56,11 @@ En un principio, se pensó hacer una App de solo una página, donde se procedia 
 
 ## 6. Consideraciones Importantes
   Se debe tomar en cuenta, que National Security trabaja con el alfabeto inglés, por tanto, a pesar de que acepta la letra Ñ en el mensaje, ésta no es cifrada, al igual sucede con los signos de interrogación  y demás caracteres especiales.
+<<<<<<< HEAD
+=======
+
+
+
+
+  
+>>>>>>> 6f21e95008850a0e7094a61f86fac5f475653ea1

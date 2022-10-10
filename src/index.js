@@ -1,9 +1,7 @@
 import cipher from './cipher.js';
 const S= (selector) => document.querySelector(selector);
-
-
 // usuario registrado
-let usuarios = {
+let usu = {
     name: "Admin",
     password:"123456"
  }  
@@ -22,17 +20,16 @@ const validarUsuario = () =>{
   let password = document.getElementById("password");
     if (usuario.value === "") return alert("Debes ingresar tu nombre de usuario");  
     if (password.value === "") return alert("Debes ingresar tu contraseña");
-    if (usuarios.name === "Admin" && usuarios.password === "123456") {
+    if (usu.name === usuario.value && usu.password === password.value){
           S(".iniciar").classList.add("ocultar");
           S(".iniciar").classList.remove("mostrar");
           S(".principal").classList.add("mostrar");
           S(".principal").classList.remove("ocultar");
-          S(".usuario").innerHTML= usuarios.name;
+          S(".usuario").innerHTML= usu.name;
   } else{
     alert("El usuario y contraseña son incorrectos");
   }
 } 
-
 S(".btn-iniciar").addEventListener("click", validarUsuario);
 
 //capturar numero de desplazamiento y textarea

@@ -35,7 +35,7 @@ aplicación en el sistema ROT13.
 ## 3. Dirigido a el usuario
 En un principio, se pensó hacer una App de solo una página, donde se procedia a Cifrar o Descifrar un mensaje. Sin embargo, pensando en que fuera una App más segura donde solo puedan usarla cierto grupo de personas autorizadas, se le añadio la validación de usuario y contraseña; Además, reflexionando en la experiencia del Usuario y en facilitarle el uso de misma, se modificó lo que en un principio de estableció en el prototipo, y  la página 2 se dividio en 3 pasos, al igual, que se cambio la ubicación de los botones y de la entrada del número de desplazamiento. Adicionalmente, El usuario no necesita cortar o pegar el mensaje si luego de escrito y cifrado desea descifrarlo de nuevo, sino que solo debe presionar el botón descifrar.
   
-##Instrucciones de uso
+## 4. Instrucciones de uso
   Para usar National Security debes estar registrado con un usuario y contraseña; el usuario y contraseña por defecto es:
 ###### Usuario: Admin
 ###### Contraseña: 123456

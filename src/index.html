@@ -10,45 +10,43 @@
   <body>
     <main>
       <section class= "mostrar iniciar">
-          <form>
+          <form class="primera">
             <h1>NATIONAL SECURITY</h1>
-            <label class="text">Usuario:</label>
-              <input type="text" id="usuario" class="nombre-usuario" name="usuario" placeholder="Nombre de usuario"><br>
-            <label class="text">Contraseña:</label>
-              <input type="password" id="password" placeholder="Ingresa tu contraseña"><br>
-            <label>
-               <button type="button" value="iniciar" class="btn-iniciar">Iniciar Sesión</button>
-            </label>
-            <label>
-               <button type="button" name="borrar" class="btn-borrar">Borrar campo</button>
-            </label>
+            <div class="container1">
+              <label class="text">Usuario:</label>
+              <input type="text" id="usuario" class="nombre-usuario" name="usuario" placeholder="Nombre de usuario">
+              <label class="text">Contraseña:</label>
+              <input type="password" id="password" placeholder="Ingresa tu contraseña">
+            </div>
+            <div class="container">
+              <button type="button" value="iniciar" class="btn-iniciar">Iniciar Sesión</button>
+              <button type="button" name="borrar" class="btn-borrar">Borrar campo</button>
+            </div>
           </form>
       </section>
       <section class="ocultar principal">
+        <article class="caja1">
           <h1>NATIONAL SECURITY</h1>
           <p> Bienvenid@ <span class="usuario"></span></p>
-          <p>1. Por favor elige el número de desplazamiento:</p>
-      <form id="cifrar">
-        <label class="desplazamiento">
+        </article>
+      <form class= "form" id="cifrar">
+        <div class="desplazamiento">
+        <p>1. Por favor elige el número de desplazamiento:</p>
         <input type="number" id="offset" class="offset"  name="offset" min="0" max="" placeholder="0" autofocus>
-        </label>
-         <p>2. Escribe tu mensaje:</p>
-         <label>
-           <textarea id="entrada" class="ver" rows="5" cols="40"  name="mensajeIngresado" placeholder="Escribe aquí el mensaje..."></textarea>
-          </label>
-          <label>
-            <textarea id="resultado" class="nover resultado" rows="5" cols="40" name="mensajeCifrado"></textarea>
-          </label>
-         <p>3. Elige lo que deseas hacer con tu mensaje:</p> 
-         <label>
-           <button type="button" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button>
-         </label>  
-         <label>
-           <button type="button" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
-         </label>
+        </div>
+        <div class="textCipher">
+          <p>2. Escribe tu mensaje:</p>
+          <textarea id="entrada" class="ver" rows="5" cols="40"  name="mensajeIngresado" placeholder="Escribe aquí el mensaje..."></textarea>
+          <textarea id="resultado" class="nover resultado" rows="5" cols="40" name="mensajeCifrado"></textarea>
+        </div> 
+        <div class="btn-container">
+          <p>3. Elige lo que deseas hacer con tu mensaje:</p>
+          <button type="button" name="cifrar" value="cifrar" class="btn-cifrar">Cifrar</button> 
+          <button type="button" name="descifrar" value="descifrar" class="btn-descifrar">Descifrar</button>
+        </div>
         </form>
       </section>
-     </main>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>

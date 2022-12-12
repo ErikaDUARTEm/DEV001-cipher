@@ -2,43 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-*{
-    margin:0;
-    padding: 0;
-}
 
 body {
+    margin:0;
+    width: 100vw;
+    height: 100vh;
     background-image: url(img/mensajes-cifrados.png);
     background-repeat: no-repeat;
     background-size: cover;
     color:rgb(241, 235, 235);
-
 }
 main {
-    margin: 80px 20px 50px 300px;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
-
 .principal{
-    margin: 0 20px 20px 20px;
+    width: 60vw;
+    height: 90vh;
+    justify-content: space-between;
+    align-self: center;
     outline-style: outset;
-    text-align: center;
-    width: 60%;
-    height: 50%;
-    box-shadow: 15px 15px 15px #eeedf2;
+    box-shadow: 15px 15px 15px #f4f3f8;
     background-color:rgba(0,0,0,.5);
 }
 p {
     font-family: 'Acme', sans-serif;
     font-size: 20px;
-    
+    margin: 0;    
 }
 #entrada {
     resize: none;
+    width: 100%;
+    height: 40%;
     border-style: 1px solid white;
     border-radius: 10px;
-    margin: 0 20px 20px 45px;
     padding: 15px;
-    font-size: 16px;
+    font-size: 20px;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
@@ -50,25 +53,28 @@ p {
 }
 #resultado {
     resize: none;
+    width: 100%;
+    height: 40%;
     border-style: 1px solid white;
     border-radius: 10px;
-    margin: 0 20px 20px 45px;
     padding: 15px;
-    font-size: 16px;
+    font-size: 20px;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
     text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 h1 {
     font-family: 'Libre Baskerville', serif;
     color:aqua;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    margin: 20px 20px 5px 20px;
-    padding: 20px 20px 20px 20px;
+    margin: 0;
     box-sizing: border-box;
-
 }
 #offset {
     border: 1px solid ;
@@ -82,6 +88,10 @@ h1 {
     color:#187683;
     box-shadow:5px 5px 10px #fbfbff;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .btn-cifrar, .btn-descifrar  {
     background-color:rgba(66, 244, 244, 0.822);
@@ -96,16 +106,16 @@ h1 {
     cursor: pointer;
     border-radius: 15px;
     box-shadow: 5px 9px 15px white;
-    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .btn-cifrar:hover {background-color: rgb(44, 197, 232);}
 
-.btn-cifrar:active {
-  background-color: #1af794;
-  box-shadow: 0 5px #666;
-  transform: translate 0.04;
+.btn-cifrar:active { background-color: #1af794; box-shadow: 0 5px #666; transform: translate 0.04; -webkit-transform: translate 0.04; -moz-transform: translate 0.04; -ms-transform: translate 0.04; -o-transform: translate 0.04;
 }
-  
+
 .btn-descifrar:hover {
     background-color: rgb(44, 197, 232);
 }
@@ -121,31 +131,64 @@ h1 {
 }
 
 .iniciar {
-    width: 60%;
-    height: 80%;
+    width: 50%;
+    height: 70%;
+    justify-content: center;
+    align-self: center;
     outline-style: outset;
     box-shadow: 15px 15px 15px #f4f3f8;
     background-color:rgba(0,0,0,.5)
 }
 
 .text {
-    margin: 10px 10px 10px 60px;
     font-family: 'Roboto Slab', serif;
     color:  white;
+    font-size: 20px;
 }
-
+.primera{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
 #usuario {
-    margin: 10px 5px 5px 31px;
+    margin-left: 32px;
     border-radius: 5px;
     color:grey;
-    height: 20px;
-   
+    width: 60%;
+    height: 25px;
+    font-size: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 #password{
-    margin: 10px 5px 20px 4px;
     border-radius: 5px;
     color:grey;
-    height: 20px;
+    width: 60%;
+    height: 25px;
+    font-size: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .btn-iniciar, .btn-borrar {
     margin: 20px 5px 60px 50px;
@@ -160,6 +203,10 @@ h1 {
     box-shadow: 5px 10px 15px white;
     border: 1px rgb(133, 130, 130);
     cursor: pointer;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .btn-iniciar:hover {
     background-color: rgb(44, 197, 232);
@@ -173,15 +220,54 @@ h1 {
     background-color: #1be960;
     box-shadow: 0 5px #666;
     transform: translate 0.04;
+    -webkit-transform: translate 0.04;
+    -moz-transform: translate 0.04;
+    -ms-transform: translate 0.04;
+    -o-transform: translate 0.04;
 }
 .btn-borrar:active {
     background-color: #1be960;
     box-shadow: 0 5px #666;
     transform: translate 0.04;
-  }
+    -webkit-transform: translate 0.04;
+    -moz-transform: translate 0.04;
+    -ms-transform: translate 0.04;
+    -o-transform: translate 0.04;
+}
+.caja1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px 10px 5px;
+    gap: 8px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.desplazamiento {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.textCipher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
+}
 .ocultar {
     display: none;
-  }
+}
 .mostrar {
     display: block;
 }
